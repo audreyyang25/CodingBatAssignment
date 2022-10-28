@@ -1,0 +1,9 @@
+@external
+def countHi (word: String [20]) -> (uint256):
+    count: uint256 = 0
+    hi: String [2] = "hi"
+    for i in range(0, 18):
+        section: String [2] = slice(word, i, 2)
+        if section == hi:
+            count+=1
+    return count
